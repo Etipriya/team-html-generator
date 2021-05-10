@@ -1,4 +1,4 @@
-## Team profile genrator
+## Team profile generator
 
 # link to the github page
 
