@@ -6,11 +6,13 @@ const Manager = require("./lib/manager");
 
 const employees = [];
 
+//Declare init application function
 function initApp() {
   startHtml();
   addMember();
 }
 
+//Declare a function to add the member using inquirer and prompt
 function addMember() {
   inquirer
     .prompt([
@@ -84,6 +86,7 @@ function addMember() {
 //     finishHtml();
 // }
 
+//Declare a function which contains the HTML content to create a navbar
 function startHtml() {
   const html = `<!DOCTYPE html>
     <html lang="en">
@@ -100,6 +103,8 @@ function startHtml() {
         </nav>
         <div class="container">
             <div class="row">`;
+
+  //using fs.writeFile
   fs.writeFile("./output/team.html", html, function (err) {
     if (err) {
       console.log(err);
@@ -108,6 +113,7 @@ function startHtml() {
   console.log("start");
 }
 
+// Declare a function which contains the HTMl for adding engineer, intern and manager
 function addHtml(member) {
   return new Promise(function (resolve, reject) {
     const name = member.getName();
@@ -153,6 +159,8 @@ function addHtml(member) {
         </div>`;
     }
     console.log("adding team member");
+
+    //using appendFile to get the output from html
     fs.appendFile("./output/team.html", data, function (err) {
       if (err) {
         return reject(err);
@@ -162,6 +170,7 @@ function addHtml(member) {
   });
 }
 
+//Declare a function to finish the HTML
 function finishHtml() {
   const html = ` </div>
     </div>
@@ -169,6 +178,7 @@ function finishHtml() {
 </body>
 </html>`;
 
+  //Declare append function again to end the HTML and error
   fs.appendFile("./output/team.html", html, function (err) {
     if (err) {
       console.log(err);
@@ -183,4 +193,6 @@ function finishHtml() {
 // .then(function() {
 // finishHtml();
 // });
+
+//Declare empty initApp
 initApp();
