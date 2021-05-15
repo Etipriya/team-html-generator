@@ -74,14 +74,6 @@ async function addMember() {
   });
 }
 
-// function renderHtml(memberArray) {
-//     startHtml();
-//     for (const member of memberArray) {
-//         addHtml(member);
-//     }
-//     finishHtml();
-// }
-
 //Declare a function which contains the HTML content to create a navbar
 function startHtml() {
   const html = `<!DOCTYPE html>
@@ -182,13 +174,6 @@ function finishHtml() {
   });
   console.log("end");
 }
-
-// addMember();
-// startHtml();
-// addHtml("hi")
-// .then(function() {
-// finishHtml();
-// });
 
 //Declare empty initApp
 initApp();

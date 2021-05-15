@@ -23,7 +23,7 @@ Other features:
 
 # Screenshots
 
-![image](src/images/team-member-page.png)
+![image](src/images/team-profile-generator.png)
 
 # Link to the github page
 
