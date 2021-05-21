@@ -27,7 +27,7 @@ Other features:
 
 Testing screenshots: This show that all the test have passed related to employee, engineer, intern and manager.
 
-![image](./src/images/test1.png)
+![image](src/images/test.png)
 
 ![image](./src/images/test2.png)
 
