@@ -25,6 +25,14 @@ Other features:
 
 ![image](src/images/team-profile-generator.png)
 
+Testing screenshots
+
+![image](src/images/test1.png)
+
+![image](./src/images/test2.png)
+
+![image](./src/images/test3.png)
+
 # Link to the github page
 
 https://etipriya.github.io/team-html-generator/
